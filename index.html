@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./mobileview.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Reenie+Beanie&display=swap"
       rel="stylesheet"
@@ -226,7 +227,11 @@
         </section>
 
         <!-- Video Section -->
-        <section class="video_container"></section>
+        <section class="video_container">
+          <div class="video_container_button_container">
+            <img src="./img/Play.png" alt="" />
+          </div>
+        </section>
         <!-- skills section -->
 
         <section class="skills_container">
@@ -868,67 +873,73 @@
         <section class="testimonial_container">
           <div class="testimonial_content">
             <div class="testimonial_content_card">
-              <div class="testimonial-wrapper">
-                <div class="testimonial-header">
-                  <span class="badge">Testimonial</span>
-                  <div class="heading">See what my clients says about me</div>
-                </div>
+              <div class="testimonial-header">
+                <span class="badge">Testimonial</span>
+                <h3 class="heading">See what my clients says about me</h3>
+              </div>
 
-                <div class="testimonial-content">
-                  <div class="testimonial-card">
-                    <img class="quotes" src="./img/quotes.png" alt="" />
+              <div class="testimonial-content">
+                <div class="testimonial-card">
+                  <img class="quotes" src="./img/quotes.png" alt="" />
 
-                    <p class="testimonial-text">
-                      “Great Designer, does great work and is very flexible with
-                      change. If you’re a programmer and are looking for UI/UX
-                      designer, is definitely well qualified for the job.”
-                    </p>
-                    <span class="divider"></span>
-                    <div class="testimonial-footer">
-                      <div class="project-info">
-                        <div class="project-name">EaseMyKid</div>
-                        <div class="project-label">Project</div>
-                      </div>
-                      <div class="project-link">
-                        <span>Check Project</span>
-                        <img src="./img/arrowright.png" alt="" />
-                      </div>
+                  <p class="testimonial-text">
+                    “Great Designer, does great work and is very flexible with
+                    change. If you’re a programmer and are looking for UI/UX
+                    designer, is definitely well qualified for the job.”
+                  </p>
+                  <span class="divider"></span>
+                  <div class="testimonial-footer">
+                    <div class="project-info">
+                      <div class="project-name">EaseMyKid</div>
+                      <div class="project-label">Project</div>
+                    </div>
+                    <div class="project-link">
+                      <span>Check Project</span>
+                      <img src="./img/arrowright.png" alt="" />
                     </div>
                   </div>
+                </div>
 
-                  <div class="author-details">
-                    <div class="author-info">
-                      <img
-                        src="./img/pff.png"
-                        alt="Author Image"
-                        class="author-image"
-                      />
-                      <div class="author-meta">
-                        <span class="author-name">Cameron Williamson</span>
-                        <div class="author-role">
-                          <span>Founder of</span>
-                          <span class="bold"> cypexsoft</span>
-                          <div class="separator"></div>
-                          <div class="website">
-                            <img src="./img/link.png" alt="" />
-                            <a href="#" class="url">cypexsoft.com</a>
-                          </div>
+                <div class="author-details">
+                  <div class="author-info">
+                    <img
+                      src="./img/pff.png"
+                      alt="Author Image"
+                      class="author-image"
+                    />
+                    <div class="author-meta">
+                      <span class="author-name">Cameron Williamson</span>
+                      <div class="author-role">
+                        <span>Founder of</span>
+                        <span class="bold"> cypexsoft</span>
+                        <div class="separator"></div>
+                        <div class="website">
+                          <img src="./img/link.png" alt="" />
+                          <a href="#" class="url">cypexsoft.com</a>
                         </div>
                       </div>
                     </div>
-                    <div class="nav-arrows">
-                      <div class="arrow prev">
-                        <img src="./img/arrowright.png" alt="" />
-                      </div>
-                      <div class="arrow next">
-                        <img src="./img/greenarrow1.png" alt="" />
-                      </div>
+                  </div>
+                  <div class="nav-arrows">
+                    <div class="arrow prev">
+                      <img src="./img/arrowright.png" alt="" />
+                    </div>
+                    <div class="arrow next">
+                      <img src="./img/greenarrow1.png" alt="" />
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-            <img src="./img/oldman.png" alt="" />
+
+            <!-- Testimonaiol Image -->
+            <div class="frame-box">
+              <img class="snapshot-bg" src="./img/oldman.png" alt="Snapshot" />
+              <div class="shade-layer"></div>
+              <div class="role-tagline">Founder of GearUp</div>
+              <div class="glass-circle"></div>
+              <div class="mini-outline"></div>
+            </div>
           </div>
         </section>
 
@@ -939,10 +950,12 @@
             <div class="faq_card">
               <div class="faq_card_content">
                 <h3 class="faq_card_content_heading">Find your answer here?</h3>
-                <p>No worries, You can share your quires over here.</p>
+                <p class="faq_card_content_heading_text">
+                  No worries, You can share your quires over here.
+                </p>
               </div>
               <div class="contact-container">
-                <div class="contact-text">Contact Me</div>
+                <span class="contact-text">Contact Me</span>
               </div>
             </div>
             <div class="faq-container">
